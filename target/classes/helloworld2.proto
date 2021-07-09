@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package com.filesgen.grpcHelloWorld;
+
+message HelloRequest2 {
+  string name2 = 1;
+}
+
+message HelloResponse2 {
+  string greeting2 = 1;
+}
+service GreetingService2 {
+  rpc greeting2 (HelloRequest2) returns (HelloResponse2);
+}
